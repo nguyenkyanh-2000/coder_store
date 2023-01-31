@@ -102,7 +102,7 @@ function applyFilter(products, filters) {
   }
 
   // FILTER PRODUCTS
-  if (typeof filters.gender !== "undefined") {
+  if (typeof filters.gender !== "undefined" && filters.gender.length > 0) {
     filteredProducts = products.filter((product) =>
       filters.gender.includes(product.gender)
     );
